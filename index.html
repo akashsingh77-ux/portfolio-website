@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Akash Singh — Full Stack Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="nav" id="navbar">
+    <div class="nav-inner">
+      <span class="nav-logo"><span class="dot">.</span></span>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#achievements">Achievements</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="#about" onclick="closeMobile()">About</a>
+      <a href="#skills" onclick="closeMobile()">Skills</a>
+      <a href="#projects" onclick="closeMobile()">Projects</a>
+      <a href="#achievements" onclick="closeMobile()">Achievements</a>
+      <a href="#contact" onclick="closeMobile()">Contact</a>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <div class="hero-bg">
+      <div class="grid-overlay"></div>
+      <div class="glow g1"></div>
+      <div class="glow g2"></div>
+    </div>
+    <div class="hero-content">
+      <div class="hero-tag"><span class="tag-dot"></span>Open to Internships & Opportunities</div>
+      <h1 class="hero-name">Akash<br><span class="name-accent">Singh</span></h1>
+      <p class="hero-role">
+        <span class="typed-text" id="typedText"></span><span class="cursor">|</span>
+      </p>
+      <p class="hero-bio">
+        CSE Sophomore @ NIT Agartala · CGPA 9.40 · Building full-stack apps and solving DSA problems.
+      </p>
+      <div class="hero-ctas">
+        <a href="#projects" class="btn btn-primary">View Projects</a>
+        <a href="#contact" class="btn btn-ghost">Get In Touch</a>
+      </div>
+      <div class="hero-socials">
+        <a href="https://github.com/akashsingh77-ux" target="_blank" aria-label="GitHub">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0 1 12 6.844a9.59 9.59 0 0 1 2.504.337c1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.02 10.02 0 0 0 22 12.017C22 6.484 17.522 2 12 2z"/></svg>
+        </a>
+        <a href="https://www.linkedin.com/in/akash-singh-44381a345" target="_blank" aria-label="LinkedIn">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+        </a>
+        <a href="mailto:akashsingh007795@gmail.com" aria-label="Email">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4-8 5-8-5V6l8 5 8-5v2z"/></svg>
+        </a>
+      </div>
+    </div>
+    <div class="hero-scroll-hint">
+      <span>scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="section" id="about">
+    <div class="container">
+      <div class="section-label">01 — About</div>
+      <div class="about-grid">
+        <div class="about-text">
+          <h2 class="section-title">Building things<br>that actually work.</h2>
+          <p>I'm a Computer Science sophomore at NIT Agartala, passionate about full-stack web development and competitive programming. I'm a Computer Science sophomore at NIT Agartala passionate about full-stack development, competitive programming, and building scalable web applications.</p>
+          <p>When I'm not writing code, I'm grinding LeetCode problems or exploring new libraries. I believe good software is as much about clean architecture as it is about functionality.</p>
+          <div class="about-stats">
+            <div class="stat-card">
+              <span class="stat-num">9.40</span>
+              <span class="stat-label">CGPA</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-num">#12</span>
+              <span class="stat-label">Dept. Rank</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-num">800+</span>
+              <span class="stat-label">DSA Problems</span>
+            </div>
+          </div>
+        </div>
+        <div class="about-edu">
+          <h3 class="sub-heading">Education</h3>
+          <div class="edu-card">
+            <div class="edu-icon">🎓</div>
+            <div>
+              <div class="edu-degree">B.Tech — Computer Science & Engineering</div>
+              <div class="edu-school">NIT Agartala</div>
+              <div class="edu-meta">2024 – 2028 &nbsp;·&nbsp; CGPA: 9.40</div>
+            </div>
+          </div>
+          <div class="edu-card">
+            <div class="edu-icon">📘</div>
+            <div>
+              <div class="edu-degree">Senior Secondary (XII)</div>
+              <div class="edu-school">Glenhill School, Varanasi</div>
+              <div class="edu-meta">2023 &nbsp;·&nbsp; 87.8%</div>
+            </div>
+          </div>
+          <div class="edu-card">
+            <div class="edu-icon">📗</div>
+            <div>
+              <div class="edu-degree">High School (X)</div>
+              <div class="edu-school">Glenhill School, Varanasi</div>
+              <div class="edu-meta">2021 &nbsp;·&nbsp; 93%</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section class="section section-dark" id="skills">
+    <div class="container">
+      <div class="section-label light">02 — Skills</div>
+      <h2 class="section-title light">Tech I work with.</h2>
+      <div class="skills-grid">
+        <div class="skill-group">
+          <div class="skill-group-title">Languages</div>
+          <div class="skill-pills">
+            <span class="pill">C</span>
+            <span class="pill">C++</span>
+            <span class="pill">JavaScript</span>
+            <span class="pill">HTML</span>
+            <span class="pill">CSS</span>
+            <span class="pill">SQL</span>
+            
+          </div>
+        </div>
+        <div class="skill-group">
+          <div class="skill-group-title">Frontend</div>
+          <div class="skill-pills">
+            <span class="pill">HTML5</span>
+            <span class="pill">CSS3</span>
+            <span class="pill">React.js</span>
+            <span class="pill">Tailwind CSS</span>
+            <span class="pill">Bootstrap</span>
+            <span class="pill">Responsive Design</span>
+            
+            
+          </div>
+        </div>
+        <div class="skill-group">
+          <div class="skill-group-title">Backend</div>
+          <div class="skill-pills">
+            <span class="pill">Node.js</span>
+            <span class="pill">Express.js</span>
+            <span class="pill">MongoDB</span>
+            <span class="pill">MySQL</span>
+            <span class="pill">REST APIs</span>
+            <span class="pill">Authentication (JWT)</span>
+           
+          </div>
+        </div>
+        <div class="skill-group">
+          <div class="skill-group-title">Core CS</div>
+          <div class="skill-pills">
+            <span class="pill">DSA</span>
+            <span class="pill">OOP</span>
+            <span class="pill">DBMS</span>
+            <span class="pill">SQL</span>
+            <span class="pill">Operating Systems</span>
+            <span class="pill">Computer Networks</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <div class="skill-group-title">Tools</div>
+          <div class="skill-pills">
+            <span class="pill">Git</span>
+            <span class="pill">GitHub</span>
+            <span class="pill">VS Code</span>
+            <span class="pill">Vercel</span>
+            <span class="pill">Render</span>
+            <span class="pill">Postman</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section class="section" id="projects">
+    <div class="container">
+      <div class="section-label">07 — Projects</div>
+      <h2 class="section-title">Things I've built.</h2>
+      <div class="projects-grid">
+
+        <div class="project-card featured">
+          <div class="project-top">
+            <div class="project-tag">Featured</div>
+            <div class="project-links">
+              <a href="https://stayhub-22ln.onrender.com" target="_blank" class="project-link-btn">Live ↗</a>
+            </div>
+          </div>
+          <h3 class="project-name">🏡 StayHub — Premium Property Booking Platform</h3>
+          <p class="project-desc">StayHub is a modern full-stack accommodation and property booking platform crafted to deliver a seamless digital booking experience.
+The platform enables users to explore premium stays, discover curated properties, save favourites, and reserve accommodations through an elegant and responsive interface.
+Built with scalable backend architecture using Node.js, Express.js, MongoDB, and EJS, StayHub focuses on performance, maintainability, and clean user experiences.
+From dynamic listings and role-based access control to booking workflows and image-driven property management, the application simulates real-world accommodation platforms with a production-style architecture.</p>
+          <div class="project-stack">
+            <span>MongoDB</span><span>Express.js</span><span>Node.js</span><span>HTML</span><span>CSS</span><span>JavaScript</span> <span>EJS</span> <span>MVC Pattern</span>  <span>Express Validator</span> <span>Tailwind CSS</span>
+          </div>
+        </div>
+
+
+        <div class="project-card featured">
+          <div class="project-top">
+            <div class="project-tag">Featured</div>
+            <div class="project-links">
+              <a href="https://socialsphere-cyan.vercel.app/" target="_blank" class="project-link-btn">Live ↗</a>
+            </div>
+          </div>
+          <h3 class="project-name">
+🌐 SocialSphere — Interactive Social Media Dashboard</h3>
+          <p class="project-desc">SocialSphere is a modern and responsive social media feed platform built with React + Vite, designed to simulate real-world social interactions through dynamic post creation, engagement tracking, hashtag management, and responsive feed rendering.
+Built with a focus on state management, reusable components, and scalable front-end architecture, this project demonstrates practical React development patterns and interactive UI design.
+.</p>
+          <div class="project-stack">
+            <span>React.js</span><span>Express.js</span><span>Node.js</span><span>Vite</span><span>Context API + useReducer</span><span>JavaScript</span> <span>Bootstrap 5</span> <span>React Icons</span>
+          </div>
+        </div>
+
+
+
+<div class="project-card featured">
+          <div class="project-top">
+            <div class="project-tag">Featured</div>
+            <div class="project-links">
+              <a href="https://code-arena-wheat.vercel.app/" target="_blank" class="project-link-btn">Live ↗</a>
+            </div>
+          </div>
+          <h3 class="project-name">
+🚀 CodeArena — Online Code Compiler & Execution Platform
+</h3>
+          <p class="project-desc">CodeArena is a modern full-stack browser-based online compiler that enables users to write, compile, execute, and test code instantly without installing local environments.
+
+Built with a scalable architecture using React, Node.js, Express, and Judge0 API, CodeArena delivers a smooth coding experience with real-time execution, custom input support, and an editor-focused UI.
+
+.
+.</p>
+          <div class="project-stack">
+            <span>React.js</span><span>Express.js</span><span>Node.js</span><span>Vite</span><span>Monaco Editor</span><span>JavaScript</span> <span>Judge0 API</span> <span>Axios</span>
+          </div>
+        </div>
+
+
+        <!-- <div class="project-card">
+          <div class="project-top">
+            <div class="project-tag">Full Stack</div>
+            <div class="project-links">
+              <a href="https://github.com/akashsingh77-ux" target="_blank" class="project-link-btn">GitHub ↗</a>
+            </div>
+          </div>
+          <h3 class="project-name">CodeArena</h3>
+          <p class="project-desc">Online code compiler supporting multiple languages. Write, compile, and execute code in the browser with real-time output. Integrated Judge0 API for code execution with Monaco Editor for a VS Code-like feel.</p>
+          <div class="project-stack">
+            <span>React.js</span><span>Node.js</span><span>Express.js</span><span>Monaco Editor</span><span>Judge0 API</span>
+          </div>
+        </div> -->
+
+
+<div class="project-card featured">
+          <div class="project-top">
+            <div class="project-tag">Featured</div>
+            <div class="project-links">
+              <a href="https://neuro-match-weld.vercel.app//" target="_blank" class="project-link-btn">Live ↗</a>
+            </div>
+          </div>
+          <h3 class="project-name">
+🧠 Neuro-Match — Interactive Memory Game 🎮
+</h3>
+          <p class="project-desc">Neuro-Match is a modern and engaging memory challenge game built with React + Vite, designed to test focus, concentration, and short-term memory through fast and interactive card matching gameplay.
+
+Flip cards, discover matching pairs, track moves, and challenge yourself to complete the board with maximum efficiency.
+.</p>
+      <div class="project-stack">
+            <span>React.js</span><span>Vite</span><span>Monaco Editor</span><span>JavaScript</span> <span>React Hooks</
+          </div>
+        </div>
+      </div>
+
+
+
+
+      
+<div class="project-card featured">
+          <div class="project-top">
+            <div class="project-tag">Featured</div>
+            <div class="project-links">
+              <a href="https://akashsingh77-ux.github.io/SkyCast-Pro/" target="_blank" class="project-link-btn">Live ↗</a>
+            </div>
+          </div>
+          <h3 class="project-name">
+🌤️ SkyCast Pro – Advanced Weather Dashboard
+</h3>
+          <p class="project-desc">SkyCast Pro is a modern, responsive weather web application that provides real-time weather updates and a 3-day forecast for any city using the WeatherAPI. It features a glassmorphism UI, dynamic backgrounds based on weather conditions, and geolocation support.
+.</p>
+      <div class="project-stack">
+            <span>HTML5</span><span>CSS3 (Glassmorphism UI)</span><span>JavaScript (Vanilla JS)</span><span>JavaScript</span> <span>WeatherAPI</span>
+        </div>
+      </div>
+
+
+
+
+      <div class="project-card featured">
+          <div class="project-top">
+            <div class="project-tag">Featured</div>
+            <div class="project-links">
+              <a href="https://myntra-clone-theta-green.vercel.app/index.html" target="_blank" class="project-link-btn">Live ↗</a>
+            </div>
+          </div>
+          <h3 class="project-name">🛍️ Myntra Clone — Modern E-Commerce Front-End Experience</h3>
+          <p class="project-desc">A responsive and feature-rich Myntra-inspired shopping platform built using Vanilla JavaScript, HTML5, and CSS3. This project recreates the real-world flow of modern e-commerce applications including product discovery, filtering, wishlist management, shopping cart operations, and dynamic UI rendering.
+Designed with a modular architecture and client-side state management, the application focuses on delivering smooth interactions while maintaining clean and scalable front-end structure.
+.</p>
+          <div class="project-stack">
+            <span>HTML</span><span>CSS</span><span>Vanilla JavaScript (ES6+)</span>  <span>Browser LocalStorage</span>  <span>URLSearchParams</span> <span>Dynamic DOM Rendering</span>
+          </div>
+        </div>
+
+
+
+        
+      <div class="project-card featured">
+          <div class="project-top">
+            <div class="project-tag">Featured</div>
+            <div class="project-links">
+              <a href="https://todo-app-omega-roan.vercel.app/" target="_blank" class="project-link-btn">Live ↗</a>
+            </div>
+          </div>
+          <h3 class="project-name">Todo App 🚀</h3>
+          <p class="project-desc">AA streamlined, fully responsive task management web application designed to help users organize their daily schedules. This project highlights modern frontend structural patterns, state distribution without prop-drilling, and component-specific styling abstractions.
+.</p>
+          <div class="project-stack">
+            <span>HTML</span><span>CSS</span><span>Vanilla JavaScript (ES6+)</span>  <span>React Context API </span>  <span>createContext + Context.Provider</span> <span>React.js (Vite workflow)</span>
+          </div>
+        </div>
+
+
+
+
+
+
+
+      
+    </div>
+  </section>
+
+  <!-- ACHIEVEMENTS -->
+  <section class="section section-dark" id="achievements">
+    <div class="container">
+      <div class="section-label light">04 — Achievements</div>
+      <h2 class="section-title light">Numbers that matter.</h2>
+      <div class="achieve-grid">
+        <div class="achieve-card">
+          <div class="achieve-num">500+</div>
+          <div class="achieve-platform">LeetCode</div>
+          <div class="achieve-desc">DSA problems solved · 1700+ contest rating</div>
+        </div>
+        <div class="achieve-card">
+          <div class="achieve-num">150+</div>
+          <div class="achieve-platform">Codeforces</div>
+          <div class="achieve-desc">Problems solved · Peak rating 1179</div>
+        </div>
+        <div class="achieve-card">
+          <div class="achieve-num">2★</div>
+          <div class="achieve-platform">CodeChef</div>
+          <div class="achieve-desc">Rating 1400+ · 100+ problems solved</div>
+        </div>
+        <div class="achieve-card">
+          <div class="achieve-num">#12</div>
+          <div class="achieve-platform">NIT Agartala CSE</div>
+          <div class="achieve-desc">Department rank with CGPA 9.40</div>
+        </div>
+      </div>
+
+      <div class="certs-section">
+        <h3 class="sub-heading light">Certifications</h3>
+        <div class="certs-row">
+          <div class="cert-card">
+            <div class="cert-icon">📜</div>
+            <div>
+              <div class="cert-title">Node.js + Express.js + MongoDB</div>
+              <a href="https://drive.google.com/file/d/1ZgCElM-amtWREh2WX4QV2gHvGIcUvybw/view" target="_blank">
+    Click Here
+</a>
+              <div class="cert-meta">Backend development with API & database integration</div>
+            </div>
+          </div>
+          <div class="cert-card">
+            <div class="cert-icon">📜</div>
+            <div>
+              <div class="cert-title">Decode C++ with DSA</div>
+              <div class="cert-meta">PW Skills · Problem solving & core data structures in C++</div>
+            
+               <a href="https://drive.google.com/file/d/1SkeqbXtBKbCGlciuSmsi3yXFcf6toDVz/view" target="_blank">
+    Click Here
+</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="section" id="contact">
+    <div class="container contact-container">
+      <div class="section-label">05 — Contact</div>
+      <h2 class="section-title">Let's work together.</h2>
+      <p class="contact-sub">I'm actively looking for internships and project collaborations. Whether you have a role or just want to connect — my inbox is open.</p>
+      <div class="contact-cards">
+        <a href="mailto:akashsingh007795@gmail.com" class="contact-card">
+          <div class="cc-icon">✉️</div>
+          <div class="cc-label">Email</div>
+          <div class="cc-val">akashsingh007795@gmail.com</div>
+        </a>
+        <a href="tel:+916386451522" class="contact-card">
+          <div class="cc-icon">📞</div>
+          <div class="cc-label">Phone</div>
+          <div class="cc-val">+91 6386451522</div>
+        </a>
+        <a href="https://github.com/akashsingh77-ux" target="_blank" class="contact-card">
+          <div class="cc-icon">💻</div>
+          <div class="cc-label">GitHub</div>
+          <div class="cc-val">akashsingh77-ux</div>
+        </a>
+        <a href="https://www.linkedin.com/in/akash-singh-44381a345" target="_blank" class="contact-card">
+          <div class="cc-icon">🔗</div>
+          <div class="cc-label">LinkedIn</div>
+          <div class="cc-val">Akash Singh</div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>Designed & built by <strong>Akash Singh</strong> · 2026</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
