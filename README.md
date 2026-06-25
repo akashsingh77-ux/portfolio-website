@@ -4,7 +4,7 @@ A modern and responsive personal portfolio website built to showcase my projects
 
 ## Live Demo
 
-[Add your deployed Vercel link here.](https://portfolio-website-ten-nu-55.vercel.app/)
+(https://portfolio-website-ten-nu-55.vercel.app/)
 
 ## About
 
